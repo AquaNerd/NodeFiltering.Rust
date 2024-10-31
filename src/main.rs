@@ -13,9 +13,18 @@ impl Node {
 
 fn main() {
     let nodes = vec![
-        Node { value: 1, children: vec![Node { value: 0, children: vec![] }, Node { value: 0, children: vec![] }] },
-        Node { value: 2, children: vec![Node { value: 1, children: vec![] }, Node { value: -1, children: vec![] }] },
-        Node { value: 3, children: vec![Node { value: 0, children: vec![] }, Node { value: 0, children: vec![] }] },
+        Node { value: 1, 
+            children: vec![
+                Node { value: 0, children: vec![] }, 
+                Node { value: 0, children: vec![] }] },
+        Node { value: 2, 
+            children: vec![
+                Node { value: 1, children: vec![] }, 
+                Node { value: -1, children: vec![] }] },
+        Node { value: 3, 
+            children: vec![
+                Node { value: 1, children: vec![] }, 
+                Node { value: 1, children: vec![] }] },
     ];
 
     // Filter out nodes whose children sum to zero
